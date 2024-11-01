@@ -184,7 +184,7 @@ we don't know how to do. It's an awful experience, and we aim to avoid it with F
 
 We want Flock reviewers who are willing to step in and help a contributor achieve the final 10% of
 the PR. This doesn't mean contributors get to be lazy. But if a contributor has done everything
-that he knows how to do, and the PR is close to complete, then we want the reviewer to step in
+that they know how to do, and the PR is close to complete, then we want the reviewer to step in
 and provide direction for the final 10%. This is how we educate contributors and ensure that the
 next PR is 100% complete.
 
