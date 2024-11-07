@@ -2,6 +2,8 @@
 
 <html lang="en" data-bs-theme="light">
 <head>
+  <meta http-equiv="refresh" content="3;url=https://getflocked.dev/{{ url }}" />
+
   <meta charset="utf-8">
   <title>{{  title  }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,7 +49,10 @@
 
 <main>
 
-  {{ content }}
+  <div id="redirectNotice">
+    <h1>The Flock has migrated!</h1>
+    <p>In a few seconds we'll redirect you to: <a href="https://getflocked.dev{{ url }}">https://getflocked.dev{{ url }}</a></p>
+  </div>
 
 </main>
 

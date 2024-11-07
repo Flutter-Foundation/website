@@ -36,7 +36,8 @@ tagline: Tools for hatching new Flutters.
   <meta name="twitter:image" content="https://flutterfoundation.dev/images/nest_social-media.png" />
 
   <link href="/styles/styles.css" rel="stylesheet">
-  <link href="/styles/home.css" rel="stylesheet">
+<!--  <link href="/styles/home.css" rel="stylesheet">-->
+  <link href="/styles/post.css" rel="stylesheet">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,25 +45,37 @@ tagline: Tools for hatching new Flutters.
 </head>
 
 <body>
+<!--<header>-->
+<!--  {{ components.navBar() }}-->
+
+<!--  <img id="logo" src="/images/nest-logo.png" width="156px">-->
+<!--  <img id="divider" src="/images/header-hr.png">-->
+<!--  <p class="tagline">Tools for hatching new Flutters.</p>-->
+<!--</header>-->
+
 <header>
   {{ components.navBar() }}
 
-  <img id="logo" src="/images/nest-logo.png" width="156px">
+  <img id="logo" src="/images/flock-logo.png" width="96px">
   <img id="divider" src="/images/header-hr.png">
-  <p class="tagline">Tools for hatching new Flutters.</p>
 </header>
 
 <main>
-  <section id="what-is-it">
-    <p><span class="emphasis">Nest</span>  •  Nest is a collection of scripts, extensions, and
-      education designed to help anyone create and maintain a Flutter fork. Nest is the tooling that makes Flock possible.</p>
-  </section>
+  <div id="redirectNotice">
+    <h1>The Flock has migrated!</h1>
+    <p>In a few seconds we'll redirect you to: <a href="https://getflocked.dev{{ url }}">https://getflocked.dev{{ url }}</a></p>
+  </div>
 
-  <section id="get-started">
-    <h1>Coming Soon</h1>
-    <p>We're currently exploring and implementing the synchronization process for Flock. As a result,
-      we don't yet have any Nest tools to share. Stay tuned for updates!</p>
-  </section>
+<!--  <section id="what-is-it">-->
+<!--    <p><span class="emphasis">Nest</span>  •  Nest is a collection of scripts, extensions, and-->
+<!--      education designed to help anyone create and maintain a Flutter fork. Nest is the tooling that makes Flock possible.</p>-->
+<!--  </section>-->
+
+<!--  <section id="get-started">-->
+<!--    <h1>Coming Soon</h1>-->
+<!--    <p>We're currently exploring and implementing the synchronization process for Flock. As a result,-->
+<!--      we don't yet have any Nest tools to share. Stay tuned for updates!</p>-->
+<!--  </section>-->
 </main>
 
 {{ components.footer() }}

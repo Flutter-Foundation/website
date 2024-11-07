@@ -6,6 +6,8 @@ description: Blog for the Flock fork of Flutter.
 
 <html lang="en" data-bs-theme="light">
 <head>
+  <meta http-equiv="refresh" content="3;url=https://getflocked.dev/blog/" />
+
   <meta charset="utf-8">
   <title>{{  title  }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,31 +52,37 @@ description: Blog for the Flock fork of Flutter.
 </header>
 
 <main>
-  <h1>BLOG</h1>
-  <p>The latest news about Flock and Nest.</p>
-  <section id="posts">
-    <ol class="post-list">
-      {% for page in pages.byTag("post", sortBy="publishDate=desc") %}
-      <a href="{{ page.data['url'] }}">
-        <li>
-          <div class="post-synopsis">
-            <div class="content">
-              {% if page.data['publishDate'] is defined %}
-              <span class="publish-date above">{{ page.data['publishDate'] | formatDateTime(to = "MMMM dd, yyyy") }}</span>
-              {% endif %}
-              <span class="title">{{ page.data['title'] }}</span>
-              <p class="description">{{ page.data['description'] }}</p>
-              <p>
-                <span class="permalink">{{ page.data['url'] }}</span>
-              </p>
-            </div>
-          </div>
-        </li>
-      </a>
-      <div class="divider">&nbsp;</div>
-      {% endfor %}
-    </ol>
-  </section>
+
+  <div id="redirectNotice">
+    <h1>The Flock has migrated!</h1>
+    <p>In a few seconds we'll redirect you to: <a href="https://getflocked.dev{{ url }}">https://getflocked.dev{{ url }}</a></p>
+  </div>
+
+<!--  <h1>BLOG</h1>-->
+<!--  <p>The latest news about Flock and Nest.</p>-->
+<!--  <section id="posts">-->
+<!--    <ol class="post-list">-->
+<!--      {% for page in pages.byTag("post", sortBy="publishDate=desc") %}-->
+<!--      <a href="{{ page.data['url'] }}">-->
+<!--        <li>-->
+<!--          <div class="post-synopsis">-->
+<!--            <div class="content">-->
+<!--              {% if page.data['publishDate'] is defined %}-->
+<!--              <span class="publish-date above">{{ page.data['publishDate'] | formatDateTime(to = "MMMM dd, yyyy") }}</span>-->
+<!--              {% endif %}-->
+<!--              <span class="title">{{ page.data['title'] }}</span>-->
+<!--              <p class="description">{{ page.data['description'] }}</p>-->
+<!--              <p>-->
+<!--                <span class="permalink">{{ page.data['url'] }}</span>-->
+<!--              </p>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </li>-->
+<!--      </a>-->
+<!--      <div class="divider">&nbsp;</div>-->
+<!--      {% endfor %}-->
+<!--    </ol>-->
+<!--  </section>-->
 </main>
 
 {{ components.footer() }}
